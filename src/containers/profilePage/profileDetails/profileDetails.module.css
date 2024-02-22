@@ -1,0 +1,8 @@
+.data{
+    font-weight: 800;
+    margin-left: 50px;
+    padding-right: 5px;
+}
+.data:nth-child(1){
+    margin-left: 0;
+}

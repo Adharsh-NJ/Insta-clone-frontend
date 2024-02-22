@@ -1,0 +1,28 @@
+.logo {
+  height: 30px;
+  padding: 0;
+}
+.search {
+  background-color: #efefef;
+  height: 34px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+  width: 280px;
+}
+.searchIcon {
+  padding: 0 20px;
+  opacity: 0.5;
+  font-size: 22px;
+}
+.searchInput {
+  width: 200px !important;
+}
+.searchInput:focus {
+  width: 250px !important;
+}
+.navIcons {
+  font-size: 1.8rem !important;
+  color: black;
+  opacity: 0.8;
+}

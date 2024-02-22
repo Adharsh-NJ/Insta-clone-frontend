@@ -1,0 +1,57 @@
+.icon {
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+  /* border: .15vw solid white; */
+}
+.iconContainer {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+.iconContainer::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 105%;
+  height: 105%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.loading {
+  display: block;
+  position: absolute;
+  width: 115%;
+  height: 115%;
+  background-image: linear-gradient(
+    315deg,
+    rgba(217, 44, 203, 1) 0%,
+    rgba(232, 11, 23, 1) 52%,
+    rgba(253.8, 162, 0, 1) 100%
+  );
+  border-radius: 9999px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.animation {
+  animation-name: rotate;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {
+    left: -6.8%;
+    top: -6.8%;
+    transform: rotate(0turn);
+  }
+  100% {
+    left: -6.8%;
+    top: -6.8%;
+    transform: rotate(1turn);
+  }
+}
